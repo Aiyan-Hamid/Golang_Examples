@@ -1,15 +1,16 @@
+// variable number of input params
 package main
 
 import "fmt"
 
 func sum(nums ...int) {
-	fmt.Print(nums, " ")
+	fmt.Print(nums, " ") //[1 2 3]
 	total := 0
 
 	for _, num := range nums {
 		total += num
 	}
-	fmt.Println(total)
+	fmt.Println("total - ", total)
 }
 
 func main() {
